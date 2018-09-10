@@ -35,4 +35,8 @@ export class TodoComponent implements OnInit {
     this.todoService.checkOrUncheckTitle($key, !isChecked);
   }
 
+  onDelete($key:string) {
+    this.todoService.removeTitle($key);
+  }
+
 }
