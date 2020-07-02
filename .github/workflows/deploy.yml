@@ -23,6 +23,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      - run: npm install
       - run: npm run pregithub
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
