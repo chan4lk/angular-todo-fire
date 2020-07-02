@@ -23,7 +23,12 @@ describe('TodoComponent', () => {
       of([
         {
           payload: {
-            toJSON: () => ({ isChecked: true, title: 'Task 1' }),
+            toJSON: () => ({ isChecked: true, title: 'Task 1', key: '1' }),
+          },
+        },
+        {
+          payload: {
+            toJSON: () => ({ isChecked: false, title: 'Task 2', key: '2' }),
           },
         },
       ])
@@ -47,5 +52,28 @@ describe('TodoComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should add item', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    const button = compiled.querySelector('input~div');
+    button.click();
+    expect(list.push).toHaveBeenCalled();
+  });
+
+  it('should toggle task complete', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    const checkbox = compiled.querySelector('.list-group-item>span');
+    checkbox.click();
+    expect(list.update).toHaveBeenCalled();
+  });
+
+  it('should remove task', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    const deleteButton = compiled.querySelector(
+      '[data-automation-id="delete-1"]'
+    );
+    deleteButton.click();
+    expect(list.remove).toHaveBeenCalled();
   });
 });

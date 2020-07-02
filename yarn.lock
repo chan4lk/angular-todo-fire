@@ -1039,6 +1039,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@chiragrupani/karma-chromium-edge-launcher@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@chiragrupani/karma-chromium-edge-launcher/-/karma-chromium-edge-launcher-2.0.0.tgz#019b9da88420ae86a4ebec1710b72a4631dafb17"
+  integrity sha512-ZSuKymhFJSXRweLOb76jN5oBGR24dL+tplQRYYyEhiXLBnRsbbUChyrlCXVF/V4BaK+o+erfhPhvgX7BzoWk4g==
+
 "@firebase/analytics-types@0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@firebase/analytics-types/-/analytics-types-0.3.1.tgz#3c5f5d71129c88295e17e914e34b391ffda1723c"

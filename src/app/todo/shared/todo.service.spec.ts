@@ -36,7 +36,7 @@ describe('TodoService', () => {
   }));
 
   it('should be created', () => {
-    const service: TodoService = TestBed.get(TodoService);
+    const service: TodoService = TestBed.inject(TodoService);
     expect(service).toBeTruthy();
   });
 });
