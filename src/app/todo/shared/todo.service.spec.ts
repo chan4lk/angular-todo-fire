@@ -1,8 +1,5 @@
-import { TestBed, async } from '@angular/core/testing';
-
 import { TodoService } from './todo.service';
 import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
-import { of } from 'rxjs';
 
 describe('TodoService', () => {
   let fireDb: jasmine.SpyObj<AngularFireDatabase>;
