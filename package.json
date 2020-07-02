@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "pregithub": "ng build --prod --base-href=/angular-todo-fire/ --deploy-url=/angular-todo-fire/",
-    "github": "gh-pages -d dist/todo-app"
+    "pregithub": "ng build --prod --base-href=/angular-todo-fire/ --deploy-url=/angular-todo-fire/ --output-path=dist",
+    "github": "gh-pages -d dist"
   },
   "private": true,
   "dependencies": {
