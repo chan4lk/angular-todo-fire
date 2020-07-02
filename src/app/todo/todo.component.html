@@ -24,7 +24,7 @@
       </span>
       {{ item.title }}
       <span
-        [attr.data-automation-id]="'delete-' + item.key"
+        [attr.data-automation-id]="'delete-' + item.$key"
         class="hover-cursor text-danger pull-right"
         (click)="onDelete(item.$key)"
       >
